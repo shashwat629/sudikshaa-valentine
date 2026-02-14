@@ -10,30 +10,57 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ff4e8c, #ff99c8);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 15px rgba(255,255,255,0.8);
 }
 
 button {
-    padding: 12px 25px;
+    padding: 14px 30px;
     font-size: 18px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
     margin: 10px;
+    transition: 0.3s;
 }
 
-#yesBtn { background: green; color: white; }
-#noBtn { background: red; color: white; }
+button:hover {
+    transform: scale(1.1);
+}
+
+#yesBtn {
+    background: #28a745;
+    color: white;
+    box-shadow: 0 0 15px rgba(40,167,69,0.6);
+}
+
+#noBtn {
+    background: #dc3545;
+    color: white;
+    box-shadow: 0 0 15px rgba(220,53,69,0.6);
+}
 </style>
-</head>
 
 <body>
 
