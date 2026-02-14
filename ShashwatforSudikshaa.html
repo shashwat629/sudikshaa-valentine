@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Sudikshaa ❤️ Shashwat&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Confetti Library --&gt;</p>
+<p class="p1">&lt;script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-family: 'Segoe UI', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: linear-gradient(135deg, #ff758c, #ff7eb3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 2.3em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 12px 28px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transition: 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#yesBtn {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: #28a745;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#noBtn {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: #dc3545;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: scale(1.1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.heart {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>animation: floatUp 5s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0.7;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes floatUp {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0% {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(100vh) scale(1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>100% {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-10vh) scale(1.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Hidden YouTube Player */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#musicPlayer {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1 id="question"&gt;Sudikshaa, will you be my Valentine? ❤️&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;button class="btn" id="yesBtn"&gt;Yes 💖&lt;/button&gt;</p>
+<p class="p1">&lt;button class="btn" id="noBtn"&gt;No 🙈&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- YouTube Background Music --&gt;</p>
+<p class="p1">&lt;iframe id="musicPlayer"</p>
+<p class="p1">src="https://www.youtube.com/embed/Bj8H6U0XkqY?autoplay=0&amp;loop=1&amp;playlist=Bj8H6U0XkqY"</p>
+<p class="p1">allow="autoplay"&gt;</p>
+<p class="p1">&lt;/iframe&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">let noCount = 0;</p>
+<p class="p1">let musicStarted = false;</p>
+<p class="p2"><br></p>
+<p class="p1">// Start music on first click anywhere</p>
+<p class="p1">document.body.addEventListener("click", function() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!musicStarted) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let iframe = document.getElementById("musicPlayer");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>iframe.src = "https://www.youtube.com/embed/Bj8H6U0XkqY?autoplay=1&amp;loop=1&amp;playlist=Bj8H6U0XkqY";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>musicStarted = true;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">// Floating Hearts</p>
+<p class="p1">function createHeart() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const heart = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>heart.classList.add("heart");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>heart.innerHTML = "❤️";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>heart.style.left = Math.random() * 100 + "vw";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>heart.style.fontSize = (Math.random() * 20 + 15) + "px";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>heart.style.animationDuration = (Math.random() * 3 + 3) + "s";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.body.appendChild(heart);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>heart.remove();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}, 5000);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">setInterval(createHeart, 300);</p>
+<p class="p2"><br></p>
+<p class="p1">// YES button</p>
+<p class="p1">document.getElementById("yesBtn").onclick = function() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("question").innerHTML =</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"It’s Official!!! 💍❤️&lt;br&gt;Sudikshaa ❤️ Shashwat";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("yesBtn").style.display = "none";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("noBtn").style.display = "none";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>confetti({</p>
+<p class="p1"><span class="Apple-converted-space">        </span>particleCount: 200,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>spread: 120,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>origin: { y: 0.6 }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">// NO button logic</p>
+<p class="p1">document.getElementById("noBtn").onclick = function() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noCount++;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (noCount === 1) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("question").innerHTML = "Nope 😒 Press again.";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if (noCount === 2) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("question").innerHTML = "Try again 😌";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if (noCount === 3) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("question").innerHTML = "Not happening 😏";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if (noCount === 4) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("question").innerHTML = "Just say YES already 😭❤️";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if (noCount &gt;= 5) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("question").innerHTML = "Okay fine… removing the No option 😌";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById("noBtn").style.display = "none";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">};</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
